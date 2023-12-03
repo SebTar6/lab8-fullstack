@@ -31,7 +31,7 @@ kubectl exec -it Sleepybox1 -- sh
 curl lab8server.restricted
 ```
 
-# Pod Sleepybox1 będzie miał dostęp do serwera WWW (lab8server) na podstawie NetworkPolicy. 
+Pod Sleepybox1 będzie miał dostęp do serwera WWW (lab8server) na podstawie NetworkPolicy. 
 
 Z poda Sleepybox2:
 ```bash
@@ -41,8 +41,8 @@ kubectl exec -it Sleepybox2 -- sh
 curl lab8server.restricted
 ```
 
-# W tym przypadku otrzymujemy błąd, ponieważ ruch ze Sleepybox2 nie jest uwzględniony w polityce Ingress.
+W tym przypadku otrzymujemy błąd, ponieważ ruch ze Sleepybox2 nie jest uwzględniony w polityce Ingress.
 
 # Wniosek
 
-# Konfiguracja działa poprawnie, a NetworkPolicy ogranicza dostęp do usługi tylko dla wybranych Pod-ów.
+Konfiguracja działa poprawnie, a NetworkPolicy ogranicza dostęp do usługi tylko dla wybranych Pod-ów.
